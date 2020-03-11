@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { MensajesComponent } from './pages/mensajes/mensajes.component'
 import { AppRoutingModule } from './app-routing.module';
+import { ListaUsuarioComponent } from './components/lista-usuario/lista-usuario.component';
 
 const config: SocketIoConfig = { url: environment.ws_url, options: {} };
 
@@ -18,7 +19,8 @@ const config: SocketIoConfig = { url: environment.ws_url, options: {} };
     FooterComponent,
     ChatComponent,
     LoginComponent,
-    MensajesComponent
+    MensajesComponent,
+    ListaUsuarioComponent
   ],
   imports: [
     BrowserModule,

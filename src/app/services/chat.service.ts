@@ -24,4 +24,8 @@ export class ChatService {
   obtenerMensajePrivado() {
     return this.ws.escuchar('mensaje-privado');
   }
+
+  usuariosActivos(){
+    return this.ws.escuchar('usuarios-activos');
+  }
 }

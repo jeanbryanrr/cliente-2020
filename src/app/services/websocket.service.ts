@@ -19,6 +19,7 @@ export class WebsocketService {
   checkStatus() {
     this.socket.on('connect', () => {
       console.log('conectado al servidor');
+      this.cargarStorage();
       this.socketSatatus = true;
     });
 
